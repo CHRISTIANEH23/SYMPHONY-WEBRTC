@@ -5975,6 +5975,21 @@ button.close {
   background-color: #1e7e34;
   border-color: rgba(165, 214, 232, 0.9);
 }
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #00A5DF;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
 
 .modal-header .close {
   padding: 1rem;
