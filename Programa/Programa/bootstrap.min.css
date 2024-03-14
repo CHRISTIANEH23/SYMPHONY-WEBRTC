@@ -9,7 +9,7 @@
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
-  --red: #dc3545;
+  --red: #dc3545;danger
   --orange: #fd7e14;
   --yellow: #ffc107;
   --green: #28a745;
@@ -5945,27 +5945,35 @@ button.close {
 .modal-backdrop.show {
   opacity: 0.5;
 }
-#rejectIncomingCallButton,
+#rejectIncomingCallButton
+{
+  font-size: 40px;
+  background-color: #dc3545;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(165, 214, 232, 0.9);
+}
+
+#rejectIncomingCallButton:hover{
+  color: #fff;
+  background-color: #a62431;
+  border-color: rgba(165, 214, 232, 0.9);
+}
+
 #acceptIncomingCallButton{
   font-size: 40px;
-  background-color: rgba(165, 214, 232, 0.7);
+  background-color: #28a745;
   border-radius: 100%;
-  border: 0px solid rgba(165, 214, 232, 0.9);
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(165, 214, 232, 0.9);
 }
-.modal-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 1rem;
-  border-bottom: 1px solid #00A5DF;
-  border-top-left-radius: 0.3rem;
-  border-top-right-radius: 0.3rem;
+
+#acceptIncomingCallButton:hover{
+  color: #fff;
+  background-color: #1e7e34;
+  border-color: rgba(165, 214, 232, 0.9);
 }
 
 .modal-header .close {
